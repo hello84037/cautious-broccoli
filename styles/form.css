@@ -1,0 +1,113 @@
+:root {
+    --main-color: #22babb;
+    --secondary-color: #348888;
+}
+
+.wf1 fieldset {
+    margin:2rem 0;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    padding: .5rem;
+    max-width: 500px;    
+}
+
+#formmessage {
+    margin: 1rem;
+    color: red;
+}
+
+.wf1 legend {
+    color: var(--main-color);
+    padding: 0 .5rem;
+}
+
+.wf1 label{
+    display: block;
+    padding-top: 1rem;
+    color:var(--secondary-color);
+    font-size: .9rem;
+}
+
+
+.wf1 input[type="text"],
+.wf1 input[type="password"],
+.wf1 input[type="email"]
+ {
+    background-color: #eee;
+    display: block;
+    border: solid 1px grey;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 375px;
+    appearance: none;
+}
+
+.wf1 input[type="range"] {
+    display: block;    
+    color: #555;
+    width: 100%;
+    max-width: 375px;
+}
+
+.wf1 #range {
+	max-width: 400px;
+	margin-bottom: 0;
+}
+
+.wf1 #rangevalue {
+	font-size: 2rem;
+	color: var(--main-color);
+}
+
+.wf1 #rangevalues {
+	display: flex;
+	margin: 0 0 0 0;
+	max-width: 400px;
+}
+
+.wf1 #rangevalues option:nth-of-type(even){
+    color: gray;
+}
+
+.wf1 #rangevalues option {
+	padding-right: 1.75rem;
+    padding-top: .5rem;
+}
+
+.wf1 input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(var(--main-color), var(--secondary-color));
+    color: #fff;
+    padding: .8rem;
+    border-radius: 6px;
+    width: 96%;
+    max-width: 400px;
+    margin: 0 0 2rem .75rem;;
+    box-shadow: 1px 1px 4px #999;
+}
+
+.wf1 input[type="submit"]:hover {
+    background-image: linear-gradient(white, white);
+    color: black;
+    border: 1px solid black;
+}
+
+#formmessage {
+    color: red; /* Example styling */
+    font-size: 14px; /* Example styling */
+}
+
+.confirmation {
+    text-align: center;
+}
+.confirmation h1 {
+    color: var(--main-color);
+    
+}
+
+.confirmation p {
+    color: var(--secondary-color);
+    font-size: 1.75rem;
+}

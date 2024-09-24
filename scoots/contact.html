@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots Website Final Project for WDD230 Contact Page</title>
+    <meta name="author" content="Brittney Child">
+    <meta name="description" content="This is a course assignment to design a website for a motor scooter rental company called Scoots. This site will include inforamtion regarding
+        rental pricing, reservations, as well as generalized information about contacting the company, temperature, and any other relevant details.">
+    <meta property="og:title" content="Brittney Child - WDD230 Scoots Final Project Contact Us Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://britty042.github.io/wdd230/scoots/images/logo.webp">
+    <meta property="og:url" content="https://britty042.github.io/wdd230/scoots">
+    <link rel="canonical" href="https://britty042.github.io/wdd230/scoots">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <div id="content">
+        <header>
+            <div class="header-content">
+                <div class="logo-area">
+                    <a id="logo_link" href="index.html">
+                        <img class="logo" src="images/logo.webp" alt="Logo Image">
+                    </a>                    
+                </div>                      
+            <nav class="navigation">
+                <a href="index.html">Home</a>
+                <a href="rentals.html">Rentals</a>
+                <a href="reservations.html">Reservations</a>
+                <a href="contact.html" class="active-page">Contact Us</a>
+                <button id="menu"></button>
+            </nav>
+            </div> 
+        </header> 
+        <main>
+            <div class="contact">
+                <div class="info">
+                    <p>Address: 3420 South Anywhere Lane</p>
+                    <p>Cozumel, Mexico</p>
+                    <p>Phone Number: 011-52-1-987-555-7896</p>
+                    <p>Email: info@scootsmotor.com</p>
+                </div>
+                <div class="thank-you">
+                    <form method="get" action="submission.html" class="thank-you">
+                    <fieldset>
+                        <legend>Contact Us</legend>
+                            <label>First Name* <input type="text" id="fname" name="fname" required></label>
+                            <label>Last Name* <input type="text" id="lname" name="lname" required></label>
+                            <label>Email*<input type="email" id="email" name="email" placeholder="somone@domain.com" title="A valid email address." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required></label>
+                            <label>What Can We Help You With?*<textarea id="comments" name="comments" cols="30" rows="15" required></textarea></label>
+                            <input type="submit" value="Send Request">
+                    </fieldset>
+                    </form>
+                </div>
+                <div class="maps">
+                    <div class="google-maps">                    
+                        <h4>Playa del Carmen-Cozumel Ferry</h4>                    
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d10569.624354695163!2d-86.9506553686617!3d20.509237941988207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sPlaya%20del%20Carmen-Cozumel%20Ferry%20dock%20in%20el%20Centro%20de%20Cozumel!5e0!3m2!1sen!2sus!4v1720737301783!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>  
+                    <div class="google-maps">                 
+                        <h4>Terminal Puerta Maya</h4>                    
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d6284.80827306672!2d-86.95643746998736!3d20.507482374353895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sTerminal%20Puerta%20Maya!5e0!3m2!1sen!2sus!4v1720737468557!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="logo_name">
+                <img class="foot_logo" src="images/logo.webp" alt="Logo Image">                
+                <div class="info">
+                    <p>Address: 3420 South Anywhere Lane</p>
+                    <p>Cozumel, Mexico</p>
+                    <p>Phone Number: 011-52-1-987-555-7896</p>
+                    <p>Email: info@scootsmotor.com</p>
+                    <p><a href="attributions.html">References</a></p>
+                </div>
+            </div>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.webp" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.webp" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.webp" alt="instagram icon">
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <img src="images/linkedin.webp" alt="linkedin icon">
+                </a>
+            </div>
+            <div class="copyright">
+            <p>&copy; <span id="year"></span> | Brittney Child | WDD 230 Final Project | <span id="lastModified"></span> </p>
+            </div>
+        </footer>
+        <script src="scripts/responsivemenu.js"></script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,473 @@
+:root {
+    --main-color: #1C3059;
+    --secondary-color: #D9304F;
+    --accent-color-1: #56a6a6;
+    --accent-color-2: #F27B13;
+    --background-color: white;
+}
+
+body {
+    color: var(--main-color);
+    font-family: "Raleway", "Nunito", sans-serif;
+    font-size: 1rem;
+    background-color: var(--background-color);
+}
+
+.banner {
+    background-color:var(--secondary-color);
+}
+
+.banner-content {
+    padding: 16px;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  .banner-text {
+    flex-grow: 1;
+    line-height: 1.4;
+    color: var(--background-color);
+    text-align: center;
+  }
+  
+  .banner-close {
+    background: none;
+    border: none;
+    color: var(--background-color);
+    cursor: pointer;
+  }
+  
+  .banner-close :hover {
+    color: var(--background-color);
+    }
+  
+header {   
+    background: var(--main-color);
+    }
+
+
+.header-content {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    }
+
+.logo {
+    float: left;
+    width: 150px;
+    height:auto;     
+}
+
+h1 {
+    color: var(--secondary-color);
+    font-style: italic;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 0;
+}    
+
+.navigation {
+    height: 5rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    grid-column:1/6;
+    padding: .25rem;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+.navigation a {
+    display: none;
+    text-align: center;
+    text-decoration: none;
+    color:var(--background-color);
+    padding: 1rem;
+}
+    
+.navigation a:hover {
+    color: var(--accent-color-2);
+}
+
+.navigation a.active-page {
+    background-color: rgba(86, 166, 166, 0.5);
+}
+    
+.open a {
+    display: block;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color:white;
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    cursor: pointer;
+    }
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before{
+    content:"❌";
+}
+
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: 10px;
+}
+
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/4;
+    z-index: -1;
+}
+
+#hero-img {
+    width: 100%;
+    border-top: whitesmoke;
+}
+
+#hero-msg {
+    line-height: 1.5em;
+    grid-column: 2/3;
+    grid-row: 2/3;     
+    margin-top: 100px;
+    color: #307a9c;
+}
+
+.hero-title {
+    color: var(--main-color);
+    text-align: center;
+    font-size: 2rem;;
+    background:rgba(255,255,255,0.5); 
+    padding: 2rem;
+}
+
+.button-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.book {
+    display: inline-block;
+    background-color:var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+h2 {
+    text-align:center;
+    padding: 1rem;
+}
+
+#rental-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    text-align: center;
+    list-style: none;
+    justify-items: center;
+}
+
+#rental-info ul {
+    list-style: none;    
+}
+
+#rental-info ul li {
+    margin-bottom: 15px;
+    text-indent: -1em;
+    padding: 1rem;
+}
+
+#rental-info ul li::first-line {
+    text-indent: 1em; 
+}
+
+h3 {
+    text-align: center;
+    background-color: var(--main-color);
+    color: var(--background-color);
+    padding: 1rem;
+    margin-top: 0px;;
+}
+.info-card {
+  display: flex;
+  flex-direction: column;  
+  width: 400px;
+  height: auto;
+  text-align: left;
+  margin: 1.5rem;
+}
+
+#weather-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.current-weather, .forecast-weather {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;
+  border: 1px solid var(--main-color);
+  text-align: center;
+  margin: 1.5rem;
+  width: 300px;
+  height: 400px;
+}
+
+.current-weather h4, .card h4{
+    background-color: var(--main-color);
+    color: var(--background-color);
+    padding: 2rem;
+    margin-top: 0;
+}
+
+
+footer {
+    background: var(--main-color);
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+}
+    
+.logo_name{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo_name a{
+    color: var(--background-color);
+}
+
+footer img {
+        max-width: 300px;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+.social{
+    padding: 1rem;
+}
+
+/* Rentals Page */
+
+.pricing-table {
+    margin: 10px auto;
+    border: thin solid var(--border);
+    box-shadow: 0 0 10px var(--shadow);
+    border-collapse: collapse;
+    width: 65%; 
+    max-width: 800px; 
+}
+
+tr.black {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+thead {
+    background-color: var(--main-color);
+    color: white;
+}
+
+th, td {
+	padding: 7px 15px;	
+}
+
+th {
+	font-size: larger;
+    border: 1px solid grey;
+}
+
+td {
+	text-align: center;
+    border: 1px solid grey;
+}
+
+tbody tr:nth-child(even) {
+	background-color: rgba(86, 166, 166, 0.5);
+    
+}   
+
+caption{   
+    caption-side: bottom;
+    padding: 10px;
+    font-size: .75rem;
+}
+
+/*Reservations Page*/
+.reservations {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 1rem;
+}
+.wf1 fieldset {
+    margin:2rem 0;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    padding: .5rem;
+    min-width: 375px;
+    max-width: 600px;
+}
+
+.wf1 legend {
+    color: var(--main-color-1);
+    padding: 0 .5rem;
+}
+
+.wf1 label{
+    display: block;
+    padding-top: 1rem;
+    color: var(--secondary-color);
+    font-size: .9rem;
+}
+
+.wf1 div {
+    padding-top: 1rem;
+    color: var(--main-color);
+    font-size: .9rem;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="tel"],
+.wf1 input[type="email"],
+.wf1 select, 
+.wf1 textarea {
+    background-color: #eee;
+    display: block;
+    border: solid 1px grey;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 95%;
+    min-width: 375px;
+    max-width: 600px;
+    appearance: none;
+
+}
+
+.wf1 input[type="radio"],
+.wf1 input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+.wf1 input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(var(--accent-color-1), var(--main-color));
+    color: #fff;
+    padding: .8rem;
+    border-radius: 6px;
+    width: 96%;
+    max-width: 400px;
+    margin: -1rem 5% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+}
+
+
+/*Contact Us*/
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    padding: 1rem;
+    text-align: center;
+}
+
+.thank-you {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.thank-you fieldset{
+    justify-content: left;
+    margin: 2rem 0;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    padding: .5rem;
+    min-width: 400px;
+    max-width: 600px;    
+}
+
+.thank-you label {
+    color:var(--secondary-color);
+}
+
+.thank-you input[type="text"],
+.thank-you input[type="email"],
+.thank-you textarea {
+    background-color: #eee;
+    display: block;
+    border: solid 1px grey;
+    border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    color: #555;
+    width: 90%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.thank-you input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(var(--accent-color-1), var(--main-color));
+    color: #fff;
+    padding: .8rem;
+    border-radius: 6px;
+    width: 96%;
+    max-width: 400px;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+}
+
+.maps {
+    margin: 0 auto; 
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.google-maps {    
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    }
+
+.google-maps h4 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.google-maps iframe {
+    width: 100%;
+    height: 450px;
+}
+
+.confirmation p {
+    text-align: center;
+    font-size: 2rem;
+}

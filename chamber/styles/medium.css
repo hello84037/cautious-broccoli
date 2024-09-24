@@ -1,0 +1,66 @@
+@media screen and (min-width: 500px) {
+    .header-content {
+        flex-direction: row;
+    } 
+
+      
+    .navigation {
+        flex-direction: row;
+    }
+  
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }   
+
+    #menu{
+        display: none;
+    }
+
+    .goals-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .spotlight {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+    .logo_name {
+        flex-direction: row;
+        
+       }
+
+    #forecast-list {
+       
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1.5rem;
+    }
+       
+    /*Discover Page*/
+       
+    .discover {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
+    }
+        
+    .information{
+        grid-column: 1/4;
+    }
+        
+    .images{
+        grid-column: 4/6;
+    }
+
+    .images img:hover {
+        opacity: 50%;
+        background: black;
+    }
+
+    /*Directory Page*/
+    .gold-display, .silver-display, .bronze-display {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+    }
+
+}

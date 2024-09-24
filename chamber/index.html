@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davis County Chamber of Commerce Site for WDD230</title>
+    <meta name="author" content="Brittney Child">
+    <meta name="description" content="This is a course assignment to design a Chamber of Commerce website. This website will provide
+    information in regards to events, general community information, and information on the benefits of joining the Chamber of Commerce, as well as an application
+    to do so. ">
+    <meta property="og:title" content="Brittney Child - WDD230 Chamber of Commerce Project">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://britty042.github.io/wdd230/chamber/images/chamber.webp">
+    <meta property="og:url" content="https://britty042.github.io/wdd230/chamber">
+    <link rel="canonical" href="https://britty042.github.io/wdd230/chamber">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="banner-content">
+            <div class="banner-text">
+                <strong>Chamber of Commerce Meet & Greet-Every Wednesday at 7:00 PM. </strong>
+            </div>
+            <button type="button" class="banner-close">
+                <span class="material-icons">close</span>   
+            </button>
+        </div>
+    </div>
+    <div id="content">
+        <header>
+            <div class="header-content">
+                <div class="logo-area">
+                    <a id="logo_link" href="index.html">
+                        <img class="logo" src="images/chamber.webp" alt="Logo Image">
+                    </a>
+                    <h1>Davis County Chamber of Commerce</h1>
+                </div>
+            </div>  
+            <label class="switch" for="darkModeToggle">
+                <input type="checkbox" id="darkModeToggle" onchange="darkMode()">
+                <span class="slider round"></span>
+            </label>      
+        </header>        
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+            <button id="menu"></button>
+        </nav>
+        <main>
+            <div class="hero-content">
+                <div class="hero-image">
+                    <picture>
+                        <source srcset="images/wdd230-org-small.webp" media="(max-width: 500px)">
+                        <source srcset="images/wdd230-org-medium.webp" media="(max-width: 1000px)">
+                        <img src="images/wdd230-org-large.webp" alt="Chamber of Commerce team" width="1500" height="1000">
+                    </picture>
+                </div>
+                <section class="hero-message">
+                    <h2>Our Mission</h2>
+                    <p>As the Davis County Chamber of Commerce, we work to pursue exellence in business, community involvement, and human kindness.  We strive to work to bring our community
+                        together in a way that lifts each of us individually, as well as helps us to rise collectively.  We are striving to build a better tomorrow.
+                    </p>
+                    <div class='button-box'>
+                        <a class="book" href="join.html">Join</a>
+                    </div>
+                </section>
+            </div>
+            <h3>Our Goals</h3>
+            <div class="goals-grid">
+                <section class="leadership-goal">
+                    <img src="images/leadership.webp" alt="Leadership Team Meeting" loading="lazy">
+                    <h4>Leadership</h4>
+                    <p>We are leaders in our community, exemplifying cooperation, direction, and encouragement to those we serve.</p>
+                </section>
+                <section class="collaboration-goal">
+                    <img src="images/teamwork.webp" alt="Hands together" loading="lazy">
+                    <h4>Collaboration</h4>
+                    <p>We work to actively listen and foster trust among members of our community.</p>
+                </section>
+                <section class="progress-goal">
+                    <img src="images/progress.webp" alt="Engineering Group" loading="lazy">
+                    <h4>Progress</h4>
+                    <p>We work to raise all in the community higher together.  We work with members of the community to improve and become stronger together.</p>
+                </section>
+                <section class="community-goal">
+                    <img src="images/children.webp" alt="Group of Children" loading="lazy">
+                    <h4>Community</h4>
+                    <p>We include all members of our community, young and old, new or life-long citizen.  We believe we all have something to offer/</p>
+                </section>
+            </div>
+            <div class="current-events">
+                <h3>Summer BBQ!</h3>
+                <ul class="events">
+                    <li>June 7th - 5:30 PM - Join us for a summer barbeque held at the Davis Paviliion.  Potluck style, meat will be provided.</li>
+                    <li> July 4th - 10 AM - Dusk - Party at the Pavillion - Join us to celebrate our nation!</li>
+                    <li> July 4th - Dusk - Fireworks at Davis Pavillion Park</li>
+                </ul>
+            </div>
+            <div class="spotlight-grid">
+                <h3>Business Spotlight</h3>
+                <div class="spotlight">
+
+                </div>
+              
+            </div>
+            <div class="weather">
+                <h3>Davis County Weather</h3>
+                <div class="current-weather">
+                    <h4>Current Temperature</h4>
+                    <span id="current-temp"></span>
+                    <figure>
+                        <img id="weather-icon" src="images/placeholder.webp" alt="">
+                        <figcaption></figcaption>
+                    </figure>
+                </div>
+                <div class="forecast">
+                    <h4>Forecast</h4>
+                    <span id="forecast-list"></span>                    
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="logo_name">
+                <img class="foot_logo" src="images/chamber.webp" alt="Logo Image">                
+                <div class="info">
+                <p>Address: 3420 South Davis County Lane</p>
+                <p>Davis County, Utah</p>
+                <p>Phone Number: 801-555-7252</p>
+                <p>Email: info@daviscountychamber.com</p>
+                </div>
+            </div>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.webp" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.webp" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.webp" alt="instagram icon">
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <img src="images/linkedin.webp" alt="linkedin icon">
+                </a>
+            </div>
+            <div class="copyright">
+            <p>&copy; <span id="year"></span> | Brittney Child | WDD 230 Chamber Project | <span id="lastModified"></span> </p>
+            </div>
+        </footer>
+    </div>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/responsivemenu.js"></script>
+    <script src="scripts/spotlight.js"></script>
+    <script src="scripts/forecast.js"></script>
+    <script src="scripts/banner.js"></script>
+</body>
+</html>

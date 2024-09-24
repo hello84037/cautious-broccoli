@@ -1,0 +1,130 @@
+{
+    "lessons": [
+        {
+            "lesson": "01", 
+            "links": [
+                {
+                    "url":"https://britty042.github.io/wdd230/lesson01/holygrail.html",
+                    "title":"Holy Grail"
+                }
+            ]},
+        {
+            "lesson": "02", 
+            "links": [
+                {
+                    "url":"https://britty042.github.io/wdd230/lesson02/design.html",
+                    "title":"Design"
+                },
+
+                {
+                    "url":"https://britty042.github.io/wdd230/lesson02/media-query.html",
+                    "title":"Media Query"
+                },
+
+                {
+                    "url":"https://britty042.github.io/wdd230/lesson02/design-principles.html",
+                    "title":"Design Principles"
+                }
+            ]},  
+        {
+            "lesson": "03", 
+            "links": [
+                {
+                    "url":"https://paste.pics/00022fa8a5a503a42b77f36890d5b760",
+                    "title":"Combiner Exercise"
+                },
+
+                {
+                    "url":"https://codepen.io/Brittney-Child/pen/WNWVQYL",
+                    "title":"Pseudo-Elements"
+                },
+
+                {
+                    "url":"https://codepen.io/Brittney-Child/pen/yLrmYGm",
+                    "title":"Responsive Hamburger Menu"
+                }
+            ]},
+        {
+            "lesson": "04", 
+            "links": [
+                {
+                    "url":"https://codepen.io/Brittney-Child/pen/LYoVPwr",
+                    "title":"Pseudo-Classes"
+                }
+            ]},  
+        {
+            "lesson": "05", 
+            "links": [
+                {
+                    "url":"https://britty042.github.io/wdd230/lesson05/bom.html",
+                    "title":"Book of Mormon Top 10"
+                }
+            ]},
+        {
+            "lesson": "06", 
+            "links": [
+                {
+                    "url":"https://britty042.github.io/wdd230/lesson06/images/landscape.webp",
+                    "title":"WebP"
+                },
+
+                {
+                    "url":"https://britty042.github.io/wdd230/lesson06/responsive-images.html",
+                    "title":"Responsive Images"
+                }
+            ]},  
+        {
+            "lesson": "07", 
+            "links": [
+                {
+                    "url":"https://britty042.github.io/wdd230/lesson07/lazyload.html",
+                    "title":"Lazy Load"
+                },
+
+                {
+                    "url":"https://britty042.github.io/wdd230/lesson07/bom.html",
+                    "title":"JS Local Storage"
+                }
+            ]},
+        {
+            "lesson": "08", 
+            "links": [
+                {
+                    "url":"https://britty042.github.io/wdd230/lesson08/tablebuild.html",
+                    "title":"Table Build"
+                },
+
+                {
+                    "url":"https://britty042.github.io/wdd230/lesson08/index.html",
+                    "title":"Form Build"
+                },
+
+                {
+                    "url":"https://britty042.github.io/wdd230/form.html",
+                    "title":"Group Form Build"
+                }
+            ]},  
+        {
+            "lesson": "09", 
+            "links": [
+                {
+                    "url":"https://britty042.github.io/wdd230/lesson09/new-ward-members.json",
+                    "title":"JSON"
+                },
+
+                {
+                    "url":"https://britty042.github.io/wdd230/lesson09/prophet.html",
+                    "title":"Prophets"
+                }
+            ]},
+        {
+            "lesson": "10", 
+            "links": [
+                {
+                    "url":"https://britty042.github.io/wdd230/lesson10/weather.html",
+                    "title":"Weather"
+                }
+            ]}
+    ]  
+
+}
