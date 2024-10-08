@@ -3,66 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Davis County Chamber of Commerce</title>
-    <meta name="author" content="Brittney Child">
-    <meta name="description" content="This is a course assignment to design a Chamber of Commerce website. This website will provide
-    information in regards to events, general community information, and information on the benefits of joining the Chamber of Commerce, as well as an application
-    to do so. ">
-    <meta property="og:title" content="Brittney Child - WDD230 Chamber of Commerce Project">
+    <title>Child Family Food Storage - About</title>
+    <meta name="author" content="Jake & Brittney Child">
+    <meta name="description" content="This is an attempt to to create an inventory application for keeping track of food storage.">
+    <meta property="og:title" content="Child Family Food Storage">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://britty042.github.io/wdd230/chamber/images/chamber.webp">
     <meta property="og:url" content="https://britty042.github.io/wdd230/chamber">
     <link rel="canonical" href="https://britty042.github.io/wdd230/chamber">
-    <link rel="icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="bread.ico">
 </head>
 <body>
     <div id="content">
-        <header>
-            <div class="header-content">
-                <div class="logo-area">
-                    <a id="logo_link" href="index.html">
-                        <img class="logo" src="images/chamber.webp" alt="Logo Image">
-                    </a>
-                    <h1>Davis County Chamber of Commerce</h1>
-                </div>
-            </div>  
-            <label class="switch" for="darkModeToggle">
-                <input type="checkbox" id="darkModeToggle" onchange="darkMode()">
-                <span class="slider round"></span>
-            </label>      
-        </header>        
+        <header><h1>About Child Family Food Storage</h1>
+            <img alt="Image of food storage" src="images/FoodStorage.png">
+        </header>
         <nav class="navigation">
             <a href="index.html">Home</a>
-            <a href="discover.html">Discover</a>
-            <a href="directory.html">Directory</a>
-            <a href="join.html">Join</a>
+            <a href="inventory.html">Inventory</a>
+            <a href="alerts.html">Alerts</a>
             <button id="menu"></button>
         </nav>
         <main>
             <div class="confirmation">
-                <h1>Thank You for Joining the Chamber of Commerce!</h1>
-                <p>A member of our board of directors will reach out to you soon.</p>
+                <h1>Thank You for visiting the Child Family Food Storage app!</h1>
+                <p>For questions or comments, please reach out to Jake or Brittney.</p>
             </div>
         </main>
         <footer>
             <div class="logo_name">
-                <img class="foot_logo" src="images/chamber.webp" alt="Logo Image">
+                <img class="foot_logo" src="images/food_storage.webp" alt="Logo Image">
                 
                 <div class="info">
-                <p>Address: 3420 South Davis County Lane</p>
-                <p>Davis County, Utah</p>
-                <p>Phone Number: 801-555-7252</p>
-                <p>Email: info@daviscountychamber.com</p>
+                <p>Jake Email: hello84037@gmail.com</p>
+                <p>Brittney Email: brittney.law@gmail.com</p>
                 </div>
             </div>
             <div class="social">
@@ -80,12 +61,11 @@
                 </a>
             </div>
             <div class="copyright">
-            <p>&copy; <span id="year"></span> | Brittney Child | WDD 230 Chamber Project | <span id="lastModified"></span> </p>
+            <p>&copy; <span id="year"></span> | Jake & Brittney Child | Child Family Food Storage | <span id="lastModified"></span> </p>
             </div>
         </footer>
     </div>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/responsivemenu.js"></script>
-    <script src="scripts/windchill.js"></script>
 </body>
 </html>

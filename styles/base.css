@@ -13,13 +13,14 @@ body {
   }
   
   header {
-    background: #348888;
+    background: #257180;
     padding: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     grid-column: 1/6;
+    color: #CB6040;
   }
   
   #menu::before {
@@ -30,7 +31,7 @@ body {
     font-size: 1.5rem;
     border: 0;
     background: none;
-    color:#22babb;
+    color:#F2E5BF;
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -39,7 +40,7 @@ body {
   .navigation { 
     display: flex;
     flex-direction: column;
-    background: #22babb;
+    background: #F2E5BF;
     list-style: none;
     grid-column:1/6;
     padding: 1rem;
@@ -168,7 +169,7 @@ body {
   
 
   footer {
-    background: #22babb;
+    background: #F2E5BF;
     padding: 1rem;
     text-align: center;
     grid-column: 1/6;

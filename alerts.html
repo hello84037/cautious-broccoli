@@ -3,49 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Child Family Inventory</title>
+    <title>Child Family Food Storage - Alerts</title>
     <meta name="author" content="Jake & Brittney Child">
-    <meta name="description" content="This is an attempt to to create an inventory application for keeping track of food storage.">
-    <meta property="og:title" content="Child Family Food Storage">
+    <meta name="description" content="This is a course assignment portal built to display the works of Brittney Child for the class: WDD 230 - Web Frontend Development. It will show each 
+    completed assignment as I develop and grow in my skills through this course.">
+    <meta property="og:title" content="Brittney Child - WDD230 Homepage">
     <meta property="og:type" content="website">
     <meta property="og:image" content="./images/island.webp">
-    <meta property="og:url" content="https://hello84037.github.io/cautious-broccoli">
-    <link rel="canonical" href="https://hello84037.github.io/cautious-broccoli/">
+    <meta property="og:url" content="https://britty042.github.io/wdd230">
+    <link rel="canonical" href="https://britty042.github.io/wdd230/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
     <link rel="icon" href="bread.ico">
 </head>
 <body>
-    <header><h1>Child Family Food Storage</h1>
-        <img alt="Image of food storage" src="images/FoodStorage.png">
+    <header><h1>Alerts</h1>
+        <img alt="Image of me" src="images/FoodStorage.png">
     </header>
+    <button id="menu">Dark Mode Button</button>
     <nav class="navigation">
+        <a href="index.html">Home</a>
         <a href="inventory.html" title="Inventory">Inventory</a>
-        <a href="alerts.html" title="Alerts">Alerts</a>
         <a href="about.html" title="About">About</a>
     </nav>
-    <button id="menu"></button>
     <main>
-        <div class="hero">
-            <div class="hero-label">
-                <button class="button1">Add</button>
-                <button class="button1">Remove</button>
-                <button class="button1">Lookup</button>
-            </div>
+        <div class="confirmation">
+            <h1>Thank You!</h1>
+            <p>Your account has been created!</p>
         </div>
-    </main>
+    </main>        
     <footer>
-        <p>&copy; <span id="year"></span> | Jake & Brittney Child | Utah, United States of America</p>
+        <p>&copy; <span id="year"></span> | Brittney Child | Utah, United States of America</p>
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/responsivemenu.js"></script>
     <script src="scripts/visits.js"></script>
-    <script src="scripts/links.js"></script>
-    <script src="scripts/weather.js"></script>
+    <script src="scripts/form.js"></script>
 </body>
 </html>
