@@ -8,7 +8,7 @@
         flex: 1 1 100%;
     }   
 
-    #menu{
+    .hamburgerMenu{
         display: none;
     }
 
@@ -16,10 +16,6 @@
         display: flex;
         flex-direction: row;
         grid-gap: 1.5rem;
-    }
-
-    #menu {
-        display: none;
     }
 
     .google-map iframe {

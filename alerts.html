@@ -18,32 +18,36 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="stylesheet" href="styles/form.css">
     <link rel="icon" href="bread.ico">
 </head>
 <body>
     <header><h1>Alerts</h1>
-        <img alt="Image of me" src="images/FoodStorage.png">
+        <img alt="Image of food storage" src="images/FoodStorage.png">
     </header>
-    <button id="menu">Dark Mode Button</button>
-    <nav class="navigation">
-        <a href="index.html">Home</a>
-        <a href="inventory.html" title="Inventory">Inventory</a>
-        <a href="about.html" title="About">About</a>
-    </nav>
+    <div class="nav">
+        <div class="menu">
+            <div class="menuLine"></div>
+            <div class="menuLine"></div>
+            <div class="menuLine"></div>
+        </div>
+        <nav class="navigation">
+            <a href="index.html" title="Home">Home</a>
+            <a href="inventory.html" title="Inventory">Inventory</a>
+            <a href="about.html" title="About">About</a>
+        </nav>
+    </div>
     <main>
         <div class="confirmation">
             <h1>Thank You!</h1>
-            <p>Your account has been created!</p>
+            <p>You have chosen to visit the alerts page.  Someday this will be filled with great things.</p>
         </div>
     </main>        
     <footer>
-        <p>&copy; <span id="year"></span> | Brittney Child | Utah, United States of America</p>
+        <p>&copy; <span id="year"></span> | Jake & Brittney Child | Utah, United States of America</p>
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/responsivemenu.js"></script>
     <script src="scripts/visits.js"></script>
-    <script src="scripts/form.js"></script>
 </body>
 </html>
