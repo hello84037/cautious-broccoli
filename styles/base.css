@@ -29,13 +29,17 @@ body {
     flex-direction: row;
   }
 
+  .menuContainer {
+    background: #F2E5BF;
+  }
+
   .menu {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     padding: 10px;
-    background: #F2E5BF;
+    transition: all 0.5s ease-out;
   }
 
   .menuLine {
@@ -43,6 +47,23 @@ body {
     height:4px;
     background-color: #DA8359;
     margin: 4px 0;
+    transition: all 0.5s ease-out;
+  }
+
+  .menu.close {
+    transform: rotate(180deg);
+  }
+
+  .menu.close .menuLine:nth-child(1) {
+    transform: rotate(45deg) translate(10px, 10px);
+  }
+
+  .menu.close .menuLine:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu.close .menuLine:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
   }
   
   .navigation { 
