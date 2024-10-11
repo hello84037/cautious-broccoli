@@ -85,7 +85,7 @@ body {
   }
 
   .navigation a:hover {
-    color: white;
+    color: #DA8359;
   }
 
   .open a {
@@ -175,6 +175,11 @@ body {
   figure img {
     width: 25%;
     height: auto;
+  }
+
+  .foot_logo {
+    height: 50px;
+    width: 50px;
   }
 
   .socialSiteImage {

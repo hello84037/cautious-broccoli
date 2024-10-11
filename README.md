@@ -7,7 +7,7 @@ This project represents a hair-brained idea for keeping track of food storage it
 - [ ] Make a new landing page for add/remove/update inventory
 - [ ] integrate barcode scanner
 - [x] Move the hamburger menu
-- [ ] Add the 'X' when the hamburger menu is open
+- [x] Add the 'X' when the hamburger menu is open
 - [ ] Add database to store the items
 - [ ] Cleanup the css to fit this new site
 - [ ] Add a table to the inventory page
