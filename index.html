@@ -45,6 +45,26 @@
                 <button id="lookupButton" class="button1">Lookup</button>
             </div>
         </div>
+        <div id="myPopup" class="popup">
+            <div class="popup-content">
+                <p id="popupHeader">How would you like to lookup the item?</p>
+                <div id="popupButtons">
+                    <div>
+                        <button class="popupButton" id="barcodeLookup">
+                            <p id="barcodeLookupText">Barcode</p>
+                            <img class="popupImg" alt="Image of QR Code" src="images/qrcode.png">
+                        </button>
+                    </div>
+                    <div>
+                        <button class="popupButton" id="manualLookup">
+                            <p id="manualLookupText">Manual</p>
+                            <img class="popupImg" alt="Image of Magnifying Glass" src="images/MagnifyingGlass.png">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
     <footer>
         <p>&copy; <span id="year"></span> | Jake & Brittney Child | Utah, United States of America</p>
@@ -53,5 +73,6 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/responsivemenu.js"></script>
     <script src="scripts/mobilebrowser.js"></script>
+    <script src="scripts/popup.js"></script>
 </body>
 </html>

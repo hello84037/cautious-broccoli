@@ -13,13 +13,13 @@ body {
 
   
   header {
-    background: #A5B68D;
+    background: #A3A380;
     padding: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    color: #FCFAEE;
+    color: #EFEBCE;
     grid-column: 1/6;
   }
 
@@ -30,7 +30,7 @@ body {
   }
 
   .menuContainer {
-    background: #F2E5BF;
+    background: #D6CE93;
   }
 
   .menu {
@@ -70,7 +70,7 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
-    background: #F2E5BF;
+    background: #D6CE93;
     list-style: none;
     padding: 1rem;
     font-size: 1.5rem;
@@ -85,7 +85,7 @@ body {
   }
 
   .navigation a:hover {
-    color: #DA8359;
+    color: #D8A48F;
   }
 
   .open a {
@@ -106,7 +106,7 @@ body {
 
   .hero img {
     width: 100%;
-    height: auto;   
+    height: auto;
   }
 
   .hero-label {
@@ -191,25 +191,75 @@ body {
     text-decoration: none;
   }
 
-  #current-temp, figcaption {
-    margin-right: 10px;
-  }
-
-  .google-map {
-    padding: 1rem;
-    position: relative;
-    display: grid;
-    grid-column: 1/6;
-  }
-
-  .google-map iframe {
-    height: 450px;
+  .popup {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
     width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+  }
+
+  .popup-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888888;
+    min-width: 300px;
+    width: 30%;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .popup-content button {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .popupButton {
+    height: 150px;
+    width: 150px;
+    padding: 5px;
+  }
+
+  .popupImg {
+    object-fit: cover;
+    width: 60px;
+    height: 60px;
+  }
+
+  #manualLookupText {
+    font-size: x-large;
+  }
+
+  #barcodeLookupText {
+    font-size: x-large;
+  }
+
+  #popupHeader {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  #popupButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 
   footer {
-    background: #F2E5BF;
+    background: #D6CE93;
     padding: 1rem;
     text-align: center;
     grid-column: 1/6;
+    margin-top: auto;
   }
+
