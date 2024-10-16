@@ -48,7 +48,7 @@
                 <button id="lookupButton" class="button1">Lookup</button>
             </div>
         </div>
-        <div id="myPopup" class="popup">
+        <div id="addRemovePopup" class="popup">
             <div class="popup-content">
                 <p id="popupHeader">How would you like to lookup the item?</p>
                 <div id="popupButtons">
@@ -65,6 +65,22 @@
                         </button>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div id="lookupPopup" class="popup">
+            <div class="popup-content">
+                <h1>What item would you like to modify?</h1>
+                <form action="/action_page.php">
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname"><br><br>
+                    <input type="submit" value="Submit">
+                    <input type="button" value="Cancel" id="cancelButton"/>
+                </form>
+
+                <p>Click the "Submit" button and the form-data will be sent to a page on the server called "action_page.php".</p>
             </div>
         </div>
 

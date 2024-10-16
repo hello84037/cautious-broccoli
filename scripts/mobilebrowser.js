@@ -12,7 +12,7 @@ function isMobile() {
   } else {
     // Code for desktop devices
     console.log("Desktop device detected"); 
-    //document.getElementById("addButton").disabled = true;
+    document.getElementById("barcodeLookup").disabled = true;
     //document.getElementById("removeButton").disabled = true;
     //document.getElementById("lookupButton").disabled = true;
   }

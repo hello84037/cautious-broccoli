@@ -4,7 +4,7 @@ let removeClicked = false;
 addButton.addEventListener(
     "click",
     function () {
-        myPopup.classList.add("show");
+        addRemovePopup.classList.add("show");
         // The Add button was clicked.
     }
 );
@@ -12,7 +12,7 @@ addButton.addEventListener(
 removeButton.addEventListener(
     "click",
     function () {
-        myPopup.classList.add("show");
+        addRemovePopup.classList.add("show");
         // The Remove button was clicked.
     }
 );
@@ -20,16 +20,17 @@ removeButton.addEventListener(
 barcodeLookup.addEventListener(
     "click",
     function () {
-        myPopup.classList.remove("show");
+        addRemovePopup.classList.remove("show");
         // barcode lookup was clicked
     }
 );
 
+// manual lookup was clicked
 manualLookup.addEventListener(
     "click",
     function () {
-        myPopup.classList.remove("show");
-        // manual lookup was clicked
+        addRemovePopup.classList.remove("show");
+        lookupPopup.classList.add("show");
     }
 );
 
@@ -37,9 +38,17 @@ window.addEventListener(
     "click",
     function (event) {
         if (event.target == myPopup) {
-            myPopup.classList.remove(
+            addRemovePopup.classList.remove(
                 "show"
             );
         }
     }
 );
+
+cancelButton.addEventListener(
+    "click",
+    function () {
+        lookupPopup.classList.remove("show");
+        return false;
+    }
+)
