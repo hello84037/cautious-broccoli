@@ -20,6 +20,44 @@
     <link rel="icon" href="bread.ico">
 </head>
 <body>
+
+    <?php
+        include_once('constants.php');
+
+        // Create connection
+        $conn = new mysqli($SERVER_NAME, $USERNAME, $PASSWORD);
+
+        // Check connection
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error . "<br>");
+        }
+        echo "Connected successfully<br>";
+
+        // Create database
+        $sql = "CREATE DATABASE IF NOT EXISTS $DATABASE_NAME";
+        if ($conn->query($sql) === TRUE) {
+            echo "Database was created successfully or already existed.<br>";
+        } else {
+            echo "Error creating database: " . $conn->error . "<br>";
+        }
+
+        // sql to create table
+        $sql = "CREATE TABLE IF NOT EXISTS $DATABASE_NAME.$TABLE_NAME (
+        id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+        itemname VARCHAR(30) NOT NULL,
+        quantity INT,
+        desiredquantity INT,
+        reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+        )";
+
+        if ($conn->query($sql) === TRUE) {
+            echo "myTable created successfully";
+        } else {
+            echo "Error creating table: " . $conn->error;
+        }
+
+        $conn->close();
+    ?>
     <header><h1>Child Family Food Storage</h1>
         <img alt="Image of food storage" src="images/FoodStorage.png">
     </header>
@@ -35,7 +73,7 @@
             <a href="index.html">
                 <img class="foot_logo" src="images/food_storage.webp" alt="Logo Image">
               </a>
-            <a href="inventory.html" title="Inventory">Inventory</a>
+            <a href="inventory.php" title="Inventory">Inventory</a>
             <a href="alerts.html" title="Alerts">Alerts</a>
             <a href="about.html" title="About">About</a>
         </nav>
@@ -70,17 +108,17 @@
 
         <div id="lookupPopup" class="popup">
             <div class="popup-content">
-                <h1>What item would you like to modify?</h1>
-                <form action="/action_page.php">
-                    <label for="fname">First name:</label>
-                    <input type="text" id="fname" name="fname"><br><br>
-                    <label for="lname">Last name:</label>
-                    <input type="text" id="lname" name="lname"><br><br>
+                <h1>Enter the information for the item</h1>
+                <form action="inventory.php" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="itemname" name="itemname"><br><br>
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1"><br><br>
+                    <label for="desiredquantity">Desired Quantity:</label>
+                    <input type="number" id="desiredquantity" name="desiredquantity" min="1" value="1"><br><br>
                     <input type="submit" value="Submit">
                     <input type="button" value="Cancel" id="cancelButton"/>
                 </form>
-
-                <p>Click the "Submit" button and the form-data will be sent to a page on the server called "action_page.php".</p>
             </div>
         </div>
 

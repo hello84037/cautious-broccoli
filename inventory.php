@@ -21,6 +21,29 @@
     <link rel="icon" href="bread.ico">
 </head>
 <body>
+    <?php
+        include_once('constants.php');
+
+        // Create connection
+        $conn = new mysqli($SERVER_NAME, $USERNAME, $PASSWORD, $DATABASE_NAME);
+
+        // Check connection
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error . "<br>");
+        }
+
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $sql = "INSERT INTO $DATABASE_NAME.$TABLE_NAME (itemname, quantity, desiredquantity)
+            VALUES ('$_POST[itemname]','$_POST[quantity]','$_POST[desiredquantity]')";
+
+            mysqli_query($conn, $sql);
+        }
+        
+        $query = "SELECT * FROM $DATABASE_NAME.$TABLE_NAME";
+        $result = mysqli_query($conn, $query);
+        
+        $conn->close();
+    ?>
     <header><h1>Inventory</h1>
         <img alt="Image of food storage" src="images/FoodStorage.png">
     </header>
@@ -33,7 +56,7 @@
             </div>
         </div>
         <nav class="navigation">
-            <a href="index.html">
+            <a href="index.php">
                 <img class="foot_logo" src="images/food_storage.webp" alt="Logo Image">
               </a>
             <a href="inventory.html" title="Inventory">Inventory</a>
@@ -42,11 +65,28 @@
         </nav>
     </div>
     <main>
-        <div class="confirmation">
-            <h1>Thank You!</h1>
-            <p>You have made it to the inventory page!</p>
-        </div>
-    </main>        
+        <?php 
+            echo "<table border='1'>
+            <tr>
+            <th>Id</th>
+            <th>Item Name</th>
+            <th>Quantity</th>
+            <th>Desired Quantity</th>
+            </tr>";
+            
+            while($row = mysqli_fetch_array($result))
+            {
+                echo "<tr>";
+                echo "<td>" . $row['id'] . "</td>";
+                echo "<td>" . $row['itemname'] . "</td>";
+                echo "<td>" . $row['quantity'] . "</td>";
+                echo "<td>" . $row['desiredquantity'] . "</td>";
+                echo "</tr>";
+            }
+            
+            echo "</table>";
+        ?>
+    </main>
     <footer>
         <p>&copy; <span id="year"></span> | Jake & Brittney Child | Utah, United States of America</p>
         <p id="lastModified"></p>
